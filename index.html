@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopZada — Buy Now!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ShopZada</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nav" aria-controls="nav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="container py-5">
+      <p class="text-uppercase small fw-bold" style="color:rgba(255,255,255,.9); letter-spacing:.15em;">
+        Autumn Collection
+      </p>
+      <h1 class="display-5 fw-bold">Everyday objects, elevated.</h1>
+      <p class="lead mt-3">Thoughtfully designed essentials for your home and desk.</p>
+      <a href="#products" class="btn btn-cta btn-lg px-4 mt-2">Shop now</a>
+    </div>
+  </header>
+
+  <!-- Carousel: 1 image per slide on phones, 3 side by side from tablet up -->
+  <div class="py-4">
+    <div class="container">
+
+      <!-- Mobile: 1 image per slide -->
+      <div class="d-flex align-items-center gap-2 d-md-none">
+        <button class="carousel-arrow" type="button" data-bs-target="#bannerMobile" data-bs-slide="prev"
+                aria-label="Previous slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <div id="bannerMobile" class="carousel slide flex-grow-1"
+             data-bs-ride="carousel" data-bs-interval="2500">
+          <div class="carousel-inner">
+            <div class="carousel-item active px-2"><img src="https://placehold.co/400x400/ffedd5/7c2d12?text=Look+1" class="d-block w-100" alt="Look 1"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/fed7aa/7c2d12?text=Look+2" class="d-block w-100" alt="Look 2"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+3" class="d-block w-100" alt="Look 3"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/f8e3d0/7c2d12?text=Look+4" class="d-block w-100" alt="Look 4"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/ffedd5/7c2d12?text=Look+5" class="d-block w-100" alt="Look 5"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+6" class="d-block w-100" alt="Look 6"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/fed7aa/7c2d12?text=Look+7" class="d-block w-100" alt="Look 7"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+8" class="d-block w-100" alt="Look 8"></div>
+            <div class="carousel-item px-2"><img src="https://placehold.co/400x400/ea580c/ffffff?text=Look+9" class="d-block w-100" alt="Look 9"></div>
+          </div>
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#bannerMobile" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          </div>
+        </div>
+
+        <button class="carousel-arrow" type="button" data-bs-target="#bannerMobile" data-bs-slide="next"
+                aria-label="Next slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Tablet and up: 3 images per slide -->
+      <div class="d-flex align-items-center gap-2 d-none d-md-flex">
+        <button class="carousel-arrow" type="button" data-bs-target="#banner" data-bs-slide="prev"
+                aria-label="Previous slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <div id="banner" class="carousel slide flex-grow-1"
+             data-bs-ride="carousel" data-bs-interval="2500">
+          <div class="carousel-inner">
+            <div class="carousel-item active px-2">
+              <div class="row g-3">
+                <div class="col-4"><img src="https://placehold.co/400x400/ffedd5/7c2d12?text=Look+1" class="d-block w-100" alt="Look 1"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/fed7aa/7c2d12?text=Look+2" class="d-block w-100" alt="Look 2"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+3" class="d-block w-100" alt="Look 3"></div>
+              </div>
+            </div>
+            <div class="carousel-item px-2">
+              <div class="row g-3">
+                <div class="col-4"><img src="https://placehold.co/400x400/f8e3d0/7c2d12?text=Look+4" class="d-block w-100" alt="Look 4"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/ffedd5/7c2d12?text=Look+5" class="d-block w-100" alt="Look 5"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+6" class="d-block w-100" alt="Look 6"></div>
+              </div>
+            </div>
+            <div class="carousel-item px-2">
+              <div class="row g-3">
+                <div class="col-4"><img src="https://placehold.co/400x400/fed7aa/7c2d12?text=Look+7" class="d-block w-100" alt="Look 7"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/fdba74/7c2d12?text=Look+8" class="d-block w-100" alt="Look 8"></div>
+                <div class="col-4"><img src="https://placehold.co/400x400/ea580c/ffffff?text=Look+9" class="d-block w-100" alt="Look 9"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+
+        <button class="carousel-arrow" type="button" data-bs-target="#banner" data-bs-slide="next"
+                aria-label="Next slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Heading + Cards -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Featured products</h2>
+      <div class="row g-4 mb-4">
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/f2e3d5/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Ceramic Pour-Over Set</h3>
+              <p class="text-muted small">Hand-glazed stoneware, matte finish.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$48.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/f7e7d8/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Linen Desk Mat</h3>
+              <p class="text-muted small">Woven European flax, leather edge.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$36.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/eddcc9/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Arc Table Lamp</h3>
+              <p class="text-muted small">Powder-coated steel, warm LED.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$89.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/f6e4d4/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Walnut Serving Board</h3>
+              <p class="text-muted small">Solid walnut, food-safe oil finish.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$42.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/f2dfcd/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Stoneware Mug Set</h3>
+              <p class="text-muted small">Set of four, reactive glaze.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$28.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card product-card h-100">
+            <img src="https://placehold.co/600x450/ead7c2/7c2d12?text=Product" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Oak Wall Shelf</h3>
+              <p class="text-muted small">White oak with blackened steel brackets.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$64.00</span>
+                <a  class="btn btn-accent btn-sm">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between
+                align-items-center gap-3 text-center text-md-start">
+      <span class="small">&copy; 2026 ShopZada LLC</span>
+      <span class="small d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
+        <a href="">Shipping</a>
+        <a href="">Returns</a>
+        <a href="">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

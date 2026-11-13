@@ -1,0 +1,37 @@
+:root { --orange: #ea580c; --orange-dark: #c2410c; }
+
+body { font-family: system-ui, sans-serif; background: #fff; }
+
+/* Navbar + footer: orange bands */
+.navbar { background: var(--orange); }
+.site-footer { background: var(--orange); color: rgba(255,255,255,.85); }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #d2540f, #a63c09); min-height: 60vh;
+        display: flex; align-items: center; }
+.hero h1 { color: #fff; }
+.hero p { color: rgba(255,255,255,.9); }
+
+/* Buttons */
+.btn-accent { background: var(--orange); border-color: var(--orange); color: #fff; font-weight: 600; }
+.btn-accent:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: #fff; }
+.btn-cta { background: #fff; border-color: #fff; color: var(--orange-dark); font-weight: 600; }
+.btn-cta:hover { background: #fff7f2; border-color: #fff7f2; color: var(--orange-dark); }
+
+/* Cards */
+.product-card { border: 1px solid #f3e3d6; border-radius: 1rem; overflow: hidden; }
+.product-card .card-img-top { aspect-ratio: 4/3; object-fit: cover; background: #f8e9dd; }
+
+/* Carousel */
+.carousel-item img { aspect-ratio: 1/1; object-fit: cover; border-radius: .5rem; }
+.carousel-arrow { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+                  border: 2px solid var(--orange); background: #fff; color: var(--orange);
+                  display: inline-flex; align-items: center; justify-content: center; }
+.carousel-arrow:hover { background: var(--orange); color: #fff; }
+
+/* Nine indicators need to be narrower to fit a phone */
+#bannerMobile .carousel-indicators [data-bs-target] { width: 16px; }
+
+/* Footer links */
+.site-footer a { color: rgba(255,255,255,.85); text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
